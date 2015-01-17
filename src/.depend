@@ -1,0 +1,13 @@
+irc.o: irc.c ../include/main.h ../include/state.h ../include/irc.h \
+  ../include/net.h ../include/str.h ../include/cmsg.h \
+  ../include/services.h ../include/replies.h
+main.o: main.c ../include/main.h ../include/state.h ../include/net.h \
+  ../include/str.h
+net.o: net.c ../include/main.h ../include/state.h ../include/net.h \
+  ../include/str.h ../include/irc.h
+state.o: state.c ../include/main.h ../include/state.h ../include/str.h \
+  ../include/net.h
+str.o: str.c ../include/main.h ../include/state.h ../include/str.h \
+  ../include/irc.h ../include/hmsg.h
+services.o: services.c ../include/main.h ../include/state.h \
+  ../include/services.h ../include/str.h ../include/net.h
